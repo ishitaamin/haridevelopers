@@ -1,0 +1,560 @@
+
+
+.title-about {
+    font-size: 16px;
+    color: #0a2239;
+    margin-bottom: 20px;
+}
+
+
+
+
+.navbar {
+    
+    width: 100%;
+    background-color:#0a2239;
+    font-family: "Poppins", sans-serif;
+    z-index: 3;
+    font-size: 20px;
+    
+}
+
+.navbar .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffc107;
+}
+
+
+.nav-container { /* New class for navbar container */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* Optional: Add more space between the brand and the nav links */
+.navbar-brand {
+    margin-right: 2rem;
+}
+
+/* Default Styles - Desktop View */
+.project-showcase {
+    padding: 50px 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Aligns title to the left */
+}
+
+.project-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: left; /* Aligns description to the left */
+}
+
+.project-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.project-features li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #27ae60;
+    font-weight: bold;
+    text-align: left; /* Aligns list items to the left */
+}
+
+/* Tablet View (Max Width 1024px) */
+@media (max-width: 1024px) {
+    .project-showcase {
+        padding: 40px 20px;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .project-desc {
+        font-size: 16px;
+    }
+
+    .project-features li {
+        font-size: 14px;
+    }
+}
+
+/* Mobile View (Max Width 768px) */
+@media (max-width: 768px) {
+    .row.align-items-center {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns content to the left */
+    }
+
+    .col-lg-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col-lg-6 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .col-lg-6 img:hover {
+        transform: scale(1.03);
+    }
+
+    .project-showcase {
+        padding: 30px 15px;
+    }
+
+    .project-title {
+        font-size: 22px;
+    }
+
+    .project-desc {
+        font-size: 15px;
+    }
+
+    .project-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .project-features li {
+        font-size: 14px;
+        background: #e8f5e9;
+        padding: 8px 12px;
+        border-radius: 5px;
+        color: #2d6a4f;
+    }
+}
+
+/* Small Mobile View (Max Width 480px) */
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+    }
+
+    .project-features {
+        flex-direction: column;
+    }
+
+    .project-features li {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .project-showcase {
+        padding: 20px 10px;
+    }
+}
+
+
+/* project carousel */
+
+/* project carousle */
+#project-gallery .scroll-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+#project-gallery .scroll-item {
+    min-width: 300px;
+    height: 300px; /* Adjust size if needed */
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#project-gallery .scroll-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Show scrollbar */
+#project-gallery .scroll-container {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Scroll thumb and track */
+}
+
+#project-gallery .scroll-container::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height */
+}
+
+#project-gallery .scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track */
+    border-radius: 5px;
+}
+
+#project-gallery .scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb */
+    border-radius: 5px;
+}
+
+#project-gallery .scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker scrollbar on hover */
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+   
+
+    
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+
+    
+
+    .project-showcase {
+        padding: 30px 15px;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .project-desc {
+        font-size: 16px;
+    }
+
+    #project-gallery .scroll-item {
+        min-width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+
+   
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+    }
+
+    #project-gallery .scroll-item {
+        min-width: 200px;
+        height: 200px;
+    }
+
+   
+}
+
+
+.container-contact {
+    text-align: center;
+    padding: 50px 10%;
+    background: #E5F9FF;
+}
+
+.title-about {
+    font-size: 16px;
+    color: #0a2239;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Contact Box Container */
+.contact-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Contact Box */
+.contact-box {
+    background: #fff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-box h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #222;
+}
+
+.contact-box p {
+    font-size: 14px;
+    color: #555;
+}
+/* Hide "Call Us" on Desktop & Show Only on Mobile */
+.phone-call {
+    display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) { 
+    .phone-call {
+        display: block; /* Show only on mobile */
+    }
+}
+
+
+/* Hide "Call Us" on Desktop */
+.phone-call {
+    display: none !important; /* Ensure it's hidden on desktop */
+}
+
+/* Show "Call Us" Only on Mobile Devices */
+@media (max-width: 768px) { 
+    .phone-call {
+        display: block !important; /* Ensure visibility only on mobile */
+    }
+}
+
+/* Footer */
+.footer {
+    background: #0a2239;
+    color: white;
+    padding: 40px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Remove Quick Links on Small Screens */
+@media (max-width: 768px) {
+    .footer-section:nth-child(2) {
+        display: none;
+    }
+}
+
+/* Footer Logo */
+.footer-logo {
+    font-size: 24px;
+    color: #fdbb2d;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fdbb2d;
+}
+
+/* Contact Info */
+.footer-section p a {
+    color: #fdbb2d;
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+}
+/* Shift Quick Links to the right ONLY on Desktop */
+@media (min-width: 1024px) { 
+    .footer-section:nth-child(2) { 
+        margin-left: 150px; /* Adjust as needed */
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer-section.quick-links {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer-section.quick-links {
+        display: none;
+    }
+    .footer-section:nth-child(2) { /* Target the second section (Quick Links) */
+        display: none;
+    }
+    
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .footer-section h5 {
+        font-size: 18px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+
+    .footer-social img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fdbb2d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+#topBtn:hover {
+    background-color: #fdbb2d;
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) { /* For tablets & mobile */
+    #topBtn {
+        bottom: 70px; /* Raise button to avoid footer overlap */
+        right: 15px;  /* Adjust position */
+        z-index: 9999; /* Highest priority */
+    }
+}
+
+
+@media (max-width: 480px) {
+    #topBtn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        bottom: 10px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haridevelopers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Replace text with logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="./images/logo1.png" alt="Hari Developers Logo" width="150" height=auto>
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#aboutus">About Us</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="./index.html#service">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#project">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Project Showcase Section -->
+<section class="project-showcase container my-5" id="project">
+    <h2 class="text-center mb-5">Featured Project: Innovative PEB Structure</h2>
+
+    <div class="row align-items-center">
+        <!-- Left: Large Image -->
+        <div class="col-lg-6">
+            <img src="./images/peb3.jpeg" class="img-fluid rounded shadow" alt="Luxury Urban Residency">
+        </div>
+        
+        <!-- Right: Overview Description -->
+        <div class="col-lg-6">
+            <h3 class="project-title">Precision-Engineered PEB Facility</h3>       
+                 <p class="project-desc">
+                This state-of-the-art Pre-Engineered Building (PEB) spans 20,000 sqft with a remarkable  
+                30-meter single-span design, eliminating the need for center columns. The innovative structure  
+                ensures maximum spatial efficiency, durability, and flexibility, making it ideal for industrial,  
+                commercial, and large-scale storage applications.
+            </p>
+            <ul class="project-features">
+                <li>✔  Seamless Structural Integration
+                    
+                     
+                     </li>
+                <li>✔ Enhanced Storage & Workspace Capacity</li>
+                <li>✔ Durable & Weather-Resistant Materials</li>
+                <li>✔ Optimized for Industrial Operations</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Additional Images & Details -->
+    <section id="project-gallery" class="container my-5">
+        <h2 class="text-center mb-4">Project Gallery</h2>
+    
+        <div class="scroll-container">
+            <!-- 10 Images in a Horizontal Scroll -->
+            <div class="scroll-item"><img src="./images/peb1.jpeg" alt="Project 1"></div>
+            <div class="scroll-item"><img src="./images/peb2.jpeg" alt="Project 2"></div>
+            <div class="scroll-item"><img src="./images/peb6.jpeg" alt="Project 3"></div>
+            <div class="scroll-item"><img src="./images/peb7.jpeg" alt="Project 4"></div>
+            <div class="scroll-item"><img src="./images/peb5.jpeg" alt="Project 5"></div>
+    
+            <div class="scroll-item"><img src="./images/peb4.jpeg" alt="Project 6"></div>
+            <div class="scroll-item"><img src="./images/oldpeb.jpeg" alt="Project 7"></div>
+            
+        </div>
+    </section>
+</section>
+
+   <!-- Contact Us Section -->
+   <div class="container-contact contact-section" id="contactus">
+    <h5 class="title-about">CONTACT US</h5>
+
+    <div class="contact-box-container">
+        <!-- Email -->
+        <div class="contact-box" onclick="openEmail()">
+            <img src="./images/gmail1.png" alt="Email">
+            <h4>Email</h4>
+            <p>Send us an email</p>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-box" onclick="openWhatsApp()">
+            <img src="./images/whatsapp.png" alt="WhatsApp">
+            <h4>WhatsApp</h4>
+            <p>Chat with us instantly</p>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-box" onclick="openLocation()">
+            <img src="./images/location1.png" alt="Location">
+            <h4>Location</h4>
+            <p>Find us on the map</p>
+        </div>
+
+        <!-- Phone Call (Hidden by default, shown only on mobile) -->
+        <div class="contact-box phone-call" onclick="makePhoneCall()">
+            <img src="./images/phone.png" alt="Call">
+            <h4>Call Us</h4>
+            <p>Tap to call</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- First Section: Logo & Social Media -->
+            <div class="footer-section">
+                <h5 class="footer-logo">Hari Developers</h5>
+                <p>Our post-construction services give you peace of mind knowing that we are still here for you even after.</p>
+                <div class="footer-social">
+                    <!-- <a href="https://facebook.com" target="_blank"><img src="./images/fb1.png" alt="Facebook"></a> -->
+                
+                    <a href="https://www.instagram.com/hari.developers?igsh=cG12MWo1MmNpd2Zk&utm_source=qr" target="_blank"><img src="./images/insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <!-- Second Section: Navigation -->
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#project">Projects</a></li>
+                </ul>
+            </div>
+    
+            <!-- Third Section: Contact Info -->
+            <div class="footer-section">
+                <h5>Contact Us</h5>
+        
+                <p>📞 +91 87588 02298</p>
+                <p>📞 +91 84859 30393</p>
+                <p>✉️ <a href="mailto:info@haridevelopers.in">info@haridevelopers.in</a></p>
+                <p>📍 GF/ Sangee Complex, Nr. Khodiyar Nagar,<br>NEW VIP Road, Vadodara, 390022</p>
+            </div>
+        </div>
+    </footer>
+     
+<script>
+   function openWhatsApp() {
+    window.open("https://wa.me/918758802298", "_blank");
+}
+
+function openEmail() {
+    window.location.href = "mailto:info@haridevelopers.in";
+}
+
+function openLocation() {
+    window.open("https://maps.app.goo.gl/DSxmgYcdP3DDY8CA6?g_st=iw", "_blank");
+}
+
+// Phone Call Function (Works Only on Mobile)
+function makePhoneCall() {
+    window.location.href = "tel:+918758802298";
+}
+
+</script>
+     </body>
+     </html>
