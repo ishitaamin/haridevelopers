@@ -6,7 +6,6 @@
 
 ![Website Screenshot](2.jpg)
 
-🔗 **Live Project**: [https://haridevelopers.in/](https://haridevelopers.in/)
 
 ---
 
